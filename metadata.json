@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Desert Ai - Intelligent Voice Agency test one ",
+  "description": "A high-performance AI agency specializing in 24/7 inbound call handling, automated appointment scheduling, and intelligent SMS follow-ups for modern businesses.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
