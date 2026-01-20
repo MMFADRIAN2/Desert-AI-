@@ -7,15 +7,29 @@ import { CallSimulation } from './components/CallSimulation.tsx';
 import { Footer } from './components/Footer.tsx';
 import { AboutUs } from './components/AboutUs.tsx';
 import { BookingModal } from './components/BookingModal.tsx';
+import { PrivacyPolicyModal } from './components/PrivacyPolicyModal.tsx';
+import { TermsOfServiceModal } from './components/TermsOfServiceModal.tsx';
 
 const App: React.FC = () => {
   const [showSMSLog, setShowSMSLog] = useState(false);
   const [showAboutUs, setShowAboutUs] = useState(false);
   const [showBooking, setShowBooking] = useState(false);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showTermsOfService, setShowTermsOfService] = useState(false);
 
   const openBooking = (e?: React.MouseEvent) => {
     e?.preventDefault();
     setShowBooking(true);
+  };
+
+  const openPrivacyPolicy = (e?: React.MouseEvent) => {
+    e?.preventDefault();
+    setShowPrivacyPolicy(true);
+  };
+
+  const openTermsOfService = (e?: React.MouseEvent) => {
+    e?.preventDefault();
+    setShowTermsOfService(true);
   };
 
   const scrollToSimulation = (e?: React.MouseEvent) => {
@@ -76,10 +90,20 @@ const App: React.FC = () => {
           </div>
         </section>
       </main>
-      <Footer onAboutUsClick={openAboutUs} />
+      <Footer 
+        onAboutUsClick={openAboutUs} 
+        onPrivacyPolicyClick={openPrivacyPolicy}
+        onTermsOfServiceClick={openTermsOfService}
+      />
 
       {/* Booking Modal (GoHighLevel Embed) */}
       {showBooking && <BookingModal onClose={() => setShowBooking(false)} />}
+
+      {/* Privacy Policy Modal */}
+      {showPrivacyPolicy && <PrivacyPolicyModal onClose={() => setShowPrivacyPolicy(false)} />}
+
+      {/* Terms of Service Modal */}
+      {showTermsOfService && <TermsOfServiceModal onClose={() => setShowTermsOfService(false)} />}
 
       {/* About Us Overlay */}
       {showAboutUs && <AboutUs onClose={() => setShowAboutUs(false)} />}

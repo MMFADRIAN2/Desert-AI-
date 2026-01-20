@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const LogoIcon = ({ className = "w-8 h-8" }: { className?: string }) => (
@@ -15,9 +14,11 @@ const LogoIcon = ({ className = "w-8 h-8" }: { className?: string }) => (
 
 interface FooterProps {
   onAboutUsClick: (e: React.MouseEvent) => void;
+  onPrivacyPolicyClick: (e: React.MouseEvent) => void;
+  onTermsOfServiceClick: (e: React.MouseEvent) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onAboutUsClick }) => {
+export const Footer: React.FC<FooterProps> = ({ onAboutUsClick, onPrivacyPolicyClick, onTermsOfServiceClick }) => {
   return (
     <footer className="bg-desert-50 pt-10 pb-12">
       <div className="container mx-auto px-6">
@@ -95,8 +96,18 @@ export const Footer: React.FC<FooterProps> = ({ onAboutUsClick }) => {
         <div className="pt-12 border-t border-desert-100 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-400 font-bold uppercase tracking-widest">
           <p>© 2025 Desert AI Technologies Inc. All rights reserved.</p>
           <div className="flex gap-8">
-            <span className="hover:text-desert-500 cursor-pointer transition-all">Privacy Policy</span>
-            <span className="hover:text-desert-500 cursor-pointer transition-all">Terms of Service</span>
+            <span 
+              onClick={onPrivacyPolicyClick}
+              className="hover:text-desert-500 cursor-pointer transition-all"
+            >
+              Privacy Policy
+            </span>
+            <span 
+              onClick={onTermsOfServiceClick}
+              className="hover:text-desert-500 cursor-pointer transition-all"
+            >
+              Terms of Service
+            </span>
             <span className="hover:text-desert-500 cursor-pointer transition-all">Cookie Policy</span>
           </div>
         </div>
