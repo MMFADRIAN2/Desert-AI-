@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface AboutUsProps {
@@ -52,11 +51,11 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onClose }) => {
                </p>
                
                <div className="space-y-3">
-                  <p className="text-gray-600 leading-relaxed font-medium italic-not">
-                    "Designing the bridge between high-utility tech and human-centric experiences."
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    I’m a UNC Charlotte graduate with four years of experience as a Technology Associate with Charlotte-Mecklenburg Schools. My work has centered on building and supporting reliable technology solutions, with a strong emphasis on web design and brand development.
                   </p>
                   <p className="text-gray-500 text-sm leading-relaxed">
-                    Adrian holds dual degrees in **History and Computer Science** from UNCC. With 4+ years as a Technology Associate at **Charlotte Mecklenburg Schools**, he specialized in high-performance web design and digital architecture. At Desert AI, he ensures every voice agent and client interface feels intuitive, professional, and seamless.
+                    I bring a practical, detail-oriented approach to every project, focusing on clarity, performance, and real-world usability. Through Desert AI, I design and implement automation-focused systems that help businesses improve communication and efficiency.
                   </p>
                </div>
 
@@ -105,11 +104,11 @@ export const AboutUs: React.FC<AboutUsProps> = ({ onClose }) => {
                </p>
                
                <div className="space-y-3">
-                  <p className="text-gray-600 leading-relaxed font-medium italic-not">
-                    "Engineering the backend logic that powers intelligent business scale."
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    I'm a UNC Charlotte graduate and current master’s student with a strong background in quantitative analysis, finance, and systems automation. I currently work as a Securities Analyst, where I focus on data-driven decision making, risk analysis, and analytical modeling.
                   </p>
                   <p className="text-gray-500 text-sm leading-relaxed">
-                    Xavier graduated **Cum Laude** from UNCC with a **BSBA in Business Analytics** and a **BS in Economics**. Currently an **MS in Data Science** candidate, he architects the complex backend automation and data pipelines that allow our AI agents to perform surgical-level business tasks with perfect accuracy.
+                    I also bring two years of experience as a mathematics tutor, which strengthened my ability to approach problems logically and communicate complex ideas clearly. At Desert AI, I focus on designing and implementing intelligent automation systems that streamline workflows, improve reliability, and support scalable business operations.
                   </p>
                </div>
 

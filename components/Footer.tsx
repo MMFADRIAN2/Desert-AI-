@@ -108,7 +108,6 @@ export const Footer: React.FC<FooterProps> = ({ onAboutUsClick, onPrivacyPolicyC
             >
               Terms of Service
             </span>
-            <span className="hover:text-desert-500 cursor-pointer transition-all">Cookie Policy</span>
           </div>
         </div>
       </div>
