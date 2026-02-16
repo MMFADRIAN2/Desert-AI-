@@ -81,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({ onAboutUsClick, onPrivacyPolicyC
                 <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-desert-600 border border-desert-100 shadow-sm">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 </div>
-                <span className="text-onyx-950 font-medium break-all">desert.ai@outlook.com</span>
+                <span className="text-onyx-950 font-medium break-all">contact@desertai.io</span>
               </li>
               <li className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-desert-600 border border-desert-100 shadow-sm">
