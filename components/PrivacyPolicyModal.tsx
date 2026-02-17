@@ -20,7 +20,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ onClose 
   };
 
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
+    <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md">
       {/* Click backdrop to close */}
       <div className="absolute inset-0" onClick={onClose}></div>
       

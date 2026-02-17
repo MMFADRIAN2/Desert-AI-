@@ -97,7 +97,13 @@ const App: React.FC = () => {
       />
 
       {/* Booking Modal (GoHighLevel Embed) */}
-      {showBooking && <BookingModal onClose={() => setShowBooking(false)} />}
+      {showBooking && (
+        <BookingModal 
+          onClose={() => setShowBooking(false)} 
+          onPrivacyClick={() => openPrivacyPolicy()}
+          onTermsClick={() => openTermsOfService()}
+        />
+      )}
 
       {/* Privacy Policy Modal */}
       {showPrivacyPolicy && <PrivacyPolicyModal onClose={() => setShowPrivacyPolicy(false)} />}

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 interface BookingModalProps {
   onClose: () => void;
+  onPrivacyClick?: () => void;
+  onTermsClick?: () => void;
 }
 
-export const BookingModal: React.FC<BookingModalProps> = ({ onClose }) => {
+export const BookingModal: React.FC<BookingModalProps> = ({ onClose, onPrivacyClick, onTermsClick }) => {
   const [activeTab, setActiveTab] = useState<1 | 2>(1);
   const [isIframe1Loading, setIsIframe1Loading] = useState(true);
   const [isIframe2Loading, setIsIframe2Loading] = useState(true);
@@ -112,14 +114,20 @@ export const BookingModal: React.FC<BookingModalProps> = ({ onClose }) => {
           </div>
         </div>
 
-        {/* Footer Info - Ultra Slim */}
-        <div className="px-5 sm:px-6 py-1.5 bg-desert-50/50 border-t border-desert-50 flex items-center justify-between flex-shrink-0">
+        {/* Footer Info - Ultra Slim with Policies */}
+        <div className="px-5 sm:px-6 py-2 bg-desert-50/50 border-t border-desert-50 flex items-center justify-between flex-shrink-0">
           <div className="flex items-center gap-1.5">
             <div className="w-1 h-1 rounded-full bg-desert-500"></div>
             <p className="text-[7px] text-gray-400 font-bold uppercase tracking-[0.2em]">
               Executive Portal
             </p>
           </div>
+
+          <div className="flex gap-4 text-[7px] text-gray-400 font-bold uppercase tracking-widest">
+            <button onClick={onPrivacyClick} className="hover:text-desert-500 transition-colors">Privacy Policy</button>
+            <button onClick={onTermsClick} className="hover:text-desert-500 transition-colors">Terms of Service</button>
+          </div>
+
           <div className="flex items-center gap-1.5 text-[7px] text-gray-400 font-bold uppercase tracking-widest">
             <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
