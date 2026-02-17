@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const LogoIcon = ({ className = "w-8 h-8" }: { className?: string }) => (
@@ -28,8 +27,8 @@ export const Hero: React.FC<HeroProps> = ({ onShowCapabilities }) => {
 
   return (
     <section className="relative pt-32 pb-12 md:pt-40 md:pb-24 lg:pt-44 lg:pb-20 overflow-hidden bg-desert-50">
-      {/* Background elements - tightened for desktop integration */}
-      <div className="absolute top-0 right-0 w-[42%] h-full bg-white -z-10 rounded-l-[120px] hidden lg:block shadow-[-15px_0_45px_-10px_rgba(0,0,0,0.02)] border-l border-desert-100/40"></div>
+      {/* Background elements - changed side block to desert-50 for consistency */}
+      <div className="absolute top-0 right-0 w-[42%] h-full bg-desert-50 -z-10 rounded-l-[120px] hidden lg:block shadow-[-15px_0_45px_-10px_rgba(0,0,0,0.02)] border-l border-desert-100/40"></div>
       <div className="absolute top-20 right-40 w-96 h-96 bg-desert-100 rounded-full blur-[100px] opacity-40 -z-10 animate-pulse"></div>
       
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 lg:gap-12 items-center">

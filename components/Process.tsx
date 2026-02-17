@@ -1,11 +1,10 @@
-
 import React from 'react';
 
 export const Process: React.FC = () => {
   return (
     <div className="py-20 md:py-24 lg:py-24 bg-desert-50 overflow-hidden relative">
-      {/* Decorative background element for seamless flow */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent opacity-50"></div>
+      {/* Decorative background element for seamless flow - adjusted to desert-50 */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-desert-50 to-transparent opacity-50"></div>
 
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">

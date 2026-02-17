@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const pillars = [
@@ -31,7 +30,7 @@ interface SuccessStoriesProps {
 
 export const SuccessStories: React.FC<SuccessStoriesProps> = ({ onAboutUsClick }) => {
   return (
-    <div className="py-20 md:py-24 lg:py-24 bg-white">
+    <div className="py-20 md:py-24 lg:py-24 bg-desert-50">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
           <div className="lg:w-5/12">
@@ -77,7 +76,7 @@ export const SuccessStories: React.FC<SuccessStoriesProps> = ({ onAboutUsClick }
              {pillars.map((p, i) => (
                <div 
                  key={i} 
-                 className="bg-desert-50/40 p-8 rounded-[36px] border border-desert-100/40 shadow-sm hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.04)] hover:bg-white hover:translate-x-2 transition-all duration-500 flex items-start gap-6 group"
+                 className="bg-white/40 p-8 rounded-[36px] border border-desert-100/40 shadow-sm hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.04)] hover:bg-white hover:translate-x-2 transition-all duration-500 flex items-start gap-6 group"
                >
                   <div className="w-14 h-14 rounded-[18px] bg-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-105 group-hover:bg-desert-500 transition-all duration-500">
                     <div className="group-hover:text-white transition-colors duration-500">

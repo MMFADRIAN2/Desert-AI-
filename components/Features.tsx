@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const featureList = [
@@ -38,7 +37,7 @@ const featureList = [
 
 export const Features: React.FC = () => {
   return (
-    <div className="pb-24 pt-12 bg-white">
+    <div className="pb-24 pt-12 bg-desert-50">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-desert-500 font-bold text-xs uppercase tracking-widest mb-4 block">Engineered for Efficiency</span>
@@ -50,7 +49,7 @@ export const Features: React.FC = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featureList.map((f, i) => (
-            <div key={i} className="group p-8 rounded-3xl border border-desert-100 bg-desert-50/50 hover:bg-white hover:shadow-2xl transition-all duration-300">
+            <div key={i} className="group p-8 rounded-3xl border border-desert-100 bg-white/50 hover:bg-white hover:shadow-2xl transition-all duration-300">
               <div className={`w-14 h-14 ${f.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                 {f.icon}
               </div>
